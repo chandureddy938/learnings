@@ -9,7 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var baseView: UIView!
+    
+    @IBOutlet weak var bottonBaseView: UIView!
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+        self.donebutton.backgroundColor = UIColor.black
+        self.donebutton.tintColor = UIColor.white
+    }
+    @IBAction func onResendCodeButtonPressed(_ sender: UIButton) {
+    }
+    @IBOutlet weak var donebutton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
